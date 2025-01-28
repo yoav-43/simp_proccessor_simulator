@@ -1,0 +1,35 @@
+assembler run: navigate to C:\Users\yoavd\source\simp_proccessor_simulator\asm\Debug
+
+fib test:
+asm.exe ..\..\fib\fib.asm ..\..\fib\imemin.txt ..\..\fib\dmemin.txt
+
+mulmat test:
+asm.exe ..\..\mulmat\mulmat.asm ..\..\mulmat\imemin.txt ..\..\mulmat\dmemin.txt
+
+binom test:
+asm.exe ..\..\binom\binom.asm ..\..\binom\imemin.txt ..\..\binom\dmemin.txt
+
+circle test:
+asm.exe ..\..\circle\circle.asm ..\..\circle\imemin.txt ..\..\circle\dmemin.txt
+
+disktest test:
+asm.exe ..\..\disktest\disktest.asm ..\..\disktest\imemin.txt ..\..\disktest\dmemin.txt
+
+
+simulator run: C:\Users\yoavd\source\simp_proccessor_simulator\sim\Debug
+
+fib test:
+sim.exe ..\..\fib\imemin.txt ..\..\fib\dmemin.txt ..\..\fib\diskin.txt ..\..\fib\irq2in.txt ..\..\fib\dmemout.txt ..\..\fib\regout.txt ..\..\fib\trace.txt ..\..\fib\hwregtrace.txt ..\..\fib\cycles.txt  ..\..\fib\leds.txt ..\..\fib\display7seg.txt ..\..\fib\diskout.txt ..\..\fib\monitor.txt ..\..\fib\monitor.yuv
+
+mulmat test:
+sim.exe ..\..\mulmat\imemin.txt ..\..\mulmat\dmemin.txt ..\..\mulmat\diskin.txt ..\..\mulmat\irq2in.txt ..\..\mulmat\dmemout.txt ..\..\mulmat\regout.txt ..\..\mulmat\trace.txt ..\..\mulmat\hwregtrace.txt ..\..\mulmat\cycles.txt  ..\..\mulmat\leds.txt ..\..\mulmat\display7seg.txt ..\..\mulmat\diskout.txt ..\..\mulmat\monitor.txt ..\..\mulmat\monitor.yuv
+
+binom test:
+sim.exe ..\..\binom\imemin.txt ..\..\binom\dmemin.txt ..\..\binom\diskin.txt ..\..\binom\irq2in.txt ..\..\binom\dmemout.txt ..\..\binom\regout.txt ..\..\binom\trace.txt ..\..\binom\hwregtrace.txt ..\..\binom\cycles.txt  ..\..\binom\leds.txt ..\..\binom\display7seg.txt ..\..\binom\diskout.txt ..\..\binom\monitor.txt ..\..\binom\monitor.yuv
+
+circle test:
+sim.exe ..\..\circle\imemin.txt ..\..\circle\dmemin.txt ..\..\circle\diskin.txt ..\..\circle\irq2in.txt ..\..\circle\dmemout.txt ..\..\circle\regout.txt ..\..\circle\trace.txt ..\..\circle\hwregtrace.txt ..\..\circle\cycles.txt  ..\..\circle\leds.txt ..\..\circle\display7seg.txt ..\..\circle\diskout.txt ..\..\circle\monitor.txt ..\..\circle\monitor.yuv
+
+disktest test:
+sim.exe ..\..\disktest\imemin.txt ..\..\disktest\dmemin.txt ..\..\disktest\diskin.txt ..\..\disktest\irq2in.txt ..\..\disktest\dmemout.txt ..\..\disktest\regout.txt ..\..\disktest\trace.txt ..\..\disktest\hwregtrace.txt ..\..\disktest\cycles.txt  ..\..\disktest\leds.txt ..\..\disktest\display7seg.txt ..\..\disktest\diskout.txt ..\..\disktest\monitor.txt ..\..\disktest\monitor.yuv
+

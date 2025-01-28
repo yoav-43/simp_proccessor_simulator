@@ -1,0 +1,72 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2017 and later
+.vs/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+*.obj
+*.pch
+*.pdb
+*.exe
+*.dll
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.lib
+*.ncb
+*.sdf
+*.ipch
+*.tlog
+*.tmp
+
+# Microsoft Visual Studio temporary files
+_ReSharper.Caches/
+_ReSharper.*
+_TestResults/
+*.vspscc
+*.vssscc
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.vsconfig
+
+# Visual Studio folders
+Debug/
+Release/
+x64/
+
+# VS Code directories
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IIS files
+_IISExpress/
+
+# Additional Visual Studio files
+*.vcxproj
+*.vcxproj.filters
+
+# Temporary files and logs
+*.log
+*.tmp
+
+#.idea
+.idea/
+
+#pdf and docs files
+*.pdf
+*.docs
