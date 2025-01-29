@@ -199,7 +199,7 @@ void secondPass(char *filename, char *imemOutput, char *dmemOutput) {
 
 			// Handle decimal and hexadecimal values for address
 			if (addressToken[0] == '0' && (addressToken[1] == 'x' || addressToken[1] == 'X')) {
-				address = (int)strtol(addressToken, NULL, 16);
+				address = (int)strtoll(addressToken, NULL, 16);
 			}
 			else {
 				address = atoi(addressToken);
@@ -207,7 +207,7 @@ void secondPass(char *filename, char *imemOutput, char *dmemOutput) {
 
 			// Handle decimal and hexadecimal values for data
 			if (dataToken[0] == '0' && (dataToken[1] == 'x' || dataToken[1] == 'X')) {
-				data = (int)strtol(dataToken, NULL, 16);
+				data = (int)strtoll(dataToken, NULL, 16);
 			}
 			else {
 				data = atoi(dataToken);
@@ -251,7 +251,7 @@ void secondPass(char *filename, char *imemOutput, char *dmemOutput) {
 
 		// Handle imm1: should always be a number (decimal or hex)
 		if (imm1Token[0] == '0' && (imm1Token[1] == 'x' || imm1Token[1] == 'X')) {
-			imm1 = (int)strtol(imm1Token, NULL, 16);
+			imm1 = (int)strtoll(imm1Token, NULL, 16);
 		}
 		else if (isalpha(imm1Token[0])) {
 			imm1 = getLabelAddress(imm1Token);
@@ -262,7 +262,7 @@ void secondPass(char *filename, char *imemOutput, char *dmemOutput) {
 
 		// Handle imm2: can be a number or a label
 		if (imm2Token[0] == '0' && (imm2Token[1] == 'x' || imm2Token[1] == 'X')) {
-			imm2 = (int)strtol(imm2Token, NULL, 16);
+			imm2 = (int)strtoll(imm2Token, NULL, 16);
 		}
 		else if (isalpha(imm2Token[0])) {
 			imm2 = getLabelAddress(imm2Token);

@@ -40,7 +40,7 @@ void load_instruction_memory(const char *filename, Memory *memory) {
 		// Parse each instruction byte
 		for (int i = 0; i < 6; i++) {
 			char byte_str[3] = { line[i * 2], line[i * 2 + 1], '\0' };
-			memory->instructions[address][i] = (uint8_t)strtol(byte_str, NULL, 16);
+			memory->instructions[address][i] = (uint8_t)strtoll(byte_str, NULL, 16);
 		}
 		address++;
 	}
@@ -69,7 +69,7 @@ void load_data_memory(const char *filename, Memory *memory) {
 		}
 
 		// Convert the valid line to a 32-bit integer and store in memory
-		memory->data[address] = (int32_t)strtol(line, NULL, 16);
+		memory->data[address] = (int32_t)strtoll(line, NULL, 16);
 		address++;
 	}
 

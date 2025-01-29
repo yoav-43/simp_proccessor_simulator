@@ -79,7 +79,7 @@ void read_sector(Memory *memory, const IORegisters *io, const char *disk_filenam
 			continue;  // Skip malformed lines
 		}
 
-		int32_t word = (int32_t)strtol(line, NULL, 16);
+		int32_t word = (int32_t)strtoll(line, NULL, 16);
 		write_data(memory, buffer + i, word);  // Store the value in memory at the correct index
 
 		i++;

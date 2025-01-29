@@ -67,6 +67,7 @@ _IISExpress/
 #.idea
 .idea/
 
-#pdf and docs files
+#pdf/docx/zip files
 *.pdf
 *.docx
+*.zip
